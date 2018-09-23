@@ -8,7 +8,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
 class WebDriver(webdriver.Remote):
     """
-    Minimal subclassing of webdriver, primarily to return a WebElement which has consistent _by_locator methods
+    Inherit Webdriver
     """
 
     def __init__(self, **kwargs):
@@ -62,38 +62,3 @@ class WebDriver(webdriver.Remote):
             return True
         except NoSuchElementException:
             return False
-
-    def is_visible(self, locator):
-        if self.is_element_present(locator):
-            if self.find_element_by_locator(locator).is_displayed():
-                return True
-            else:
-                return False
-        else:
-            return False
-
-    def is_element_available(self, locator):
-        if self.is_visible(locator):
-            return True
-        else:
-            return False
-
-    def wait_for_element_is_clickable(self, driver, locator, wait):
-        locator_type, locator_value = self.get_locator(locator)
-        try:
-            element = WebDriverWait(driver, wait).until(
-                EC.element_to_be_clickable((locator_type, locator_value))
-            )
-            return element
-        except TimeoutException as e:
-            raise Exception(e)
-
-    def wait_for_element_is_invisible(self, driver, locator, wait):
-        locator_type, locator_value = self.get_locator(locator)
-        try:
-            element = WebDriverWait(driver, wait).until(
-                EC.invisibility_of_element_located((locator_type, locator_value))
-            )
-            return element
-        except TimeoutException as e:
-            return False  # raise Exception(e)
