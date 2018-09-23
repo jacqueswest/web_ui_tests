@@ -1,0 +1,41 @@
+{
+    "locator_data": {
+        "url": "http://www.way2automation.com/angularjs-protractor/webtables/",
+        "chrome_path": "/Applications/Google Chrome.app",
+        "first_name": ["name", "FirstName"],
+        "last_name": ["name", "LastName"],
+        "username": ["name", "UserName"],
+        "password": ["name", "Password"],
+        "customer": ["css_selector", ".radio.ng-scope.ng-binding"],
+        "role": ["name", "RoleId"],
+        "email": ["name", "Email"],
+        "cell": ["name", "Mobilephone"],
+        "add_btn": ["css_selector", ".btn"],
+        "save_btn": ["css_selector", ".btn.btn-success"],
+        "search_box": ["xpath", "//input[@placeholder='Search']"],
+        "user_table_column": ["class_name", "smart-table-data-cell"],
+        "user_table": ["xpath", "//table[@table-title='Smart Table example']"]
+    },
+
+    "user1": {
+        "first_name": "FName1",
+        "last_name": "LName1",
+        "username": "User1",
+        "password": "Pass1",
+        "customer": "Company AAA",
+        "role": "Admin",
+        "email": "admin@mail.com",
+        "cell": "082555"
+    },
+
+    "user2": {
+        "first_name": "FName2",
+        "last_name": "LName2",
+        "username": "User2",
+        "password": "Pass2",
+        "customer": "Company BBB",
+        "role": "Customer",
+        "email": "customer@mail.com",
+        "cell": "083444"
+    }
+}
