@@ -11,6 +11,27 @@ For MAC OS, click on the _download button_
         
 **NB:** For Windows ensure you tick **_Add Python 3.7 to PATH_** during installation
 
+## Verify Python and pip installation
+From _cmd_ or _bash prompt_, execute:
+
+    python --version
+        Output example: Python 3.7
+    pip --version
+        Output example: /Users/mac/project/lib/python3.7/site-packages/pip (python 3.7)
+
+If you experience any problems see section _Python and pip path tips for windows_
+
+
+## NB: Python and pip path tips for windows
+If you have issues executing python and/or pip in git bash prompt then use windows native cmd.
+
+If pip application can't still not be found, add pip path to the environment variables.
+
+Find python 3 installation folder and under it you should find the scripts folder, add this scripts path to environment variables, see below possible path:
+
+    C:\Users\{UserAccountName}\AppData\Local\Programs\Python\Python37-32\Scripts
+    
+
 ## Upgrade PIP(_Python package manager_)
 From _cmd_ or _bash prompt_, execute:
 
