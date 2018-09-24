@@ -11,12 +11,12 @@ For MAC OS, click on the _download button_
         
 **NB:** For Windows ensure you tick set python path during installation.
 
-## Upgrade PIP(Python package manager)
+## Upgrade PIP(_Python package manager_)
 From _cmd_ or _bash prompt_, execute:
 
     python -m pip install --upgrade pip
 
-## Install GIT(If not installed)
+## Install GIT(_If not installed_)
 For Windows:
     
     https://git-scm.com/download/win
@@ -37,7 +37,7 @@ Download chrome driver and unzip in the root of the repository:
 ## Set the chrome path in user_data.json:
 This is the path to the chrome browser installed.
 
-**NB:** For windows paths use double backslashes(\\\\) in paths
+**NB:** For windows paths use double backslashes(\\\\) in the path
 
 Windows possible chrome path: _C:\\\Program Files (x86)\\\Google\\\Chrome\\\Application\\\chrome.exe_
 
