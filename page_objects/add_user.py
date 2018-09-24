@@ -2,7 +2,7 @@ from page_objects.username_check import username_exist
 
 
 def add_user(browser, user, **kwargs):
-    """ Adding a User """
+    """ Adding an User """
     text_box_labels = ["first_name", "last_name", "username", "password", "email", "cell"]
     locators = kwargs.get("locator_data")
     data = kwargs.get(user)
