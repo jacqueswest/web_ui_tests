@@ -26,7 +26,7 @@ For MAC OS following the guide under _Installing for MAC_:
     https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
     
 
-## Clone API Test GIT Repository:
+## Clone WEB UI Test GIT Repository:
     git clone https://github.com/jacqueswest/web_ui_tests.git
     
 ## Download Chrome driver:
