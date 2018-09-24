@@ -5,9 +5,9 @@ Select the latest version from:
     
     
     https://www.python.org/downloads/release/python-370
-For Windows select Windows x86 executable installer
+For Windows select _Windows x86 executable installer_
 
-For MAC OS, click on the download button
+For MAC OS, click on the _download button_
     
     
 **NB:** For Windows ensure you tick set python path during installation.
