@@ -11,6 +11,11 @@ For MAC OS, click on the _download button_
         
 **NB:** For Windows ensure you tick set python path during installation.
 
+## Upgrade PIP(Python package manager)
+From _cmd_ or _bash prompt_, execute:
+
+    python -m pip install --upgrade pip
+
 ## Install GIT(If not installed)
 For Windows:
     
