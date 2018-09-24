@@ -33,7 +33,7 @@ def data_setup():
 
 
 def test_verify_landing_on_user_list_table(env_setup, data_setup):
-    """ Verify that landing on user list table """
+    """ Verify landing on user list table """
 
     result = verify_landing_on_table_list(browser=driver, locators=data.get("locator_data"))
     assert result is True
