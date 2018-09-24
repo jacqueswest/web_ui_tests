@@ -71,7 +71,7 @@ From the root of the repository, run:
   
   Copy the full path of the report and open it in a browser or in a HTML viewer to view the report.
   
-  Example of API HTML test report:
+  Example of WEB UI HTML test report:
   
     Result	Test	Duration	Links
     Passed	tests/test_add_users.py::test_verify_landing_on_user_list_table	0.03	
