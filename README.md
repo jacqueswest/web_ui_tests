@@ -9,7 +9,7 @@ For Windows select _Windows x86 executable installer_
 
 For MAC OS, click on the _download button_
         
-**NB:** For Windows ensure you tick set python path during installation.
+**NB:** For Windows ensure you tick **_Add Python 3.7 to PATH_** during installation
 
 ## Upgrade PIP(_Python package manager_)
 From _cmd_ or _bash prompt_, execute:
