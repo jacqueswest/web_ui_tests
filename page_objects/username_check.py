@@ -1,5 +1,5 @@
 def username_exist(browser, text, locators):
-    """ Determine if the username is unique, returns True if it exists"""
+    """ Determine if the username is unique, returns True if it exists """
 
     browser.find_element_by_locator(locators.get("search_box")).clear()
     browser.find_element_by_locator(locators.get("search_box")).send_keys(text)
