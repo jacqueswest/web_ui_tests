@@ -37,7 +37,7 @@ Download chrome driver and unzip in the root of the repository:
 ## Set the chrome path in user_data.json:
 This is the path to the chrome browser installed.
 
-**NB:** For windows paths use double backslashes(\\\\) in paths
+**NB:** For windows paths use double backslashes(\\\\) in the path
 
 Windows possible chrome path: _C:\\\Program Files (x86)\\\Google\\\Chrome\\\Application\\\chrome.exe_
 
