@@ -3,7 +3,7 @@ from json import load
 from lib.driver import WebDriver
 from page_objects.add_user import add_user
 import selenium.webdriver.chrome.service as s
-from page_objects.go_to_site import go_to_site
+from page_objects.landing_page import verify_landing_on_table_list
 
 
 @pytest.fixture(scope="module")
@@ -35,7 +35,7 @@ def data_setup():
 def test_verify_landing_on_user_list_table(env_setup, data_setup):
     """ Verify that landing on user list table """
 
-    result = go_to_site(browser=driver, locators=data.get("locator_data"))
+    result = verify_landing_on_table_list(browser=driver, locators=data.get("locator_data"))
     assert result is True
 
 
