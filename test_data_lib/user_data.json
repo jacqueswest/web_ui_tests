@@ -1,6 +1,6 @@
 {
     "locator_data": {
-        "chrome_path": "PASTE CHROME PATH",
+        "chrome_path": "/Applications/Google Chrome.app",
         "url": "http://www.way2automation.com/angularjs-protractor/webtables/",
         "first_name": ["name", "FirstName"],
         "last_name": ["name", "LastName"],
