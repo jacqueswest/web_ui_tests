@@ -1,18 +1,18 @@
 import pytest
 from json import load
 from lib.driver import WebDriver
-from page_objects.add_user import add_user
+from page_objects.add_user import Actions as AddUserActions
 import selenium.webdriver.chrome.service as s
-from page_objects.landing_page import verify_landing_on_table_list
+from page_objects.landing_page import Actions as LandingPageActions
+from selenium.webdriver.chrome.options import Options
 
 
 @pytest.fixture(scope="module")
-def env_setup(data_setup):
+def env_setup():
     global driver
 
-    env_data = data.get("locator_data")
-    chrome_path = env_data.get("chrome_path")
-    url = env_data.get("url")
+    chrome_path = "/Applications/Google Chrome.app"
+    url = "http://www.way2automation.com/angularjs-protractor/webtables/"
 
     service = s.Service('./chromedriver')
     service.start()
@@ -25,29 +25,31 @@ def env_setup(data_setup):
 
 
 @pytest.fixture(scope="module")
-def data_setup():
-    global data
-
-    with open(file="./test_data_lib/user_data.json") as f:
-        data = load(f)
+def add_user_action():
+    return AddUserActions(driver=driver)
 
 
-def test_verify_landing_on_user_list_table(env_setup, data_setup):
+@pytest.fixture(scope="module")
+def landing_page_action():
+    return LandingPageActions(driver=driver)
+
+
+def test_verify_landing_on_user_list_table(env_setup, landing_page_action):
     """ Verify landing on user list table """
 
-    result = verify_landing_on_table_list(browser=driver, locators=data.get("locator_data"))
+    result = landing_page_action.verify_landing_on_table_list()
     assert result is True
 
 
-def test_can_add_user_one(env_setup, data_setup):
+def test_can_add_user_one(env_setup, add_user_action):
     """ Can add user1 """
 
-    results = add_user(browser=driver, user="user1", **data)
+    results = add_user_action.add_user(user="user1")
     assert results == "Add PASSED"
 
 
-def test_can_add_user_two(env_setup, data_setup):
+def test_can_add_user_two(env_setup, add_user_action):
     """ Can add user2 """
 
-    results = add_user(browser=driver, user="user2", **data)
+    results = add_user_action.add_user(user="user2")
     assert results == "Add PASSED"

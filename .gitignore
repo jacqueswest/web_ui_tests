@@ -1,0 +1,9 @@
+.DS_Store
+.idea/
+assets/
+chromedriver
+lib/__pycache__/
+page_objects/__pycache__/
+tests/__pycache__/
+venv/
+web_ui_tests_report.html

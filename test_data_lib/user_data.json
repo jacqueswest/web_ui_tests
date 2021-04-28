@@ -1,22 +1,4 @@
 {
-    "locator_data": {
-        "chrome_path": "/Applications/Google Chrome.app",
-        "url": "http://www.way2automation.com/angularjs-protractor/webtables/",
-        "first_name": ["name", "FirstName"],
-        "last_name": ["name", "LastName"],
-        "username": ["name", "UserName"],
-        "password": ["name", "Password"],
-        "customer": ["css_selector", ".radio.ng-scope.ng-binding"],
-        "role": ["name", "RoleId"],
-        "email": ["name", "Email"],
-        "cell": ["name", "Mobilephone"],
-        "add_btn": ["css_selector", ".btn"],
-        "save_btn": ["css_selector", ".btn.btn-success"],
-        "search_box": ["xpath", "//input[@placeholder='Search']"],
-        "user_table_column": ["class_name", "smart-table-data-cell"],
-        "user_table": ["xpath", "//table[@table-title='Smart Table example']"]
-    },
-
     "user1": {
         "first_name": "FName1",
         "last_name": "LName1",
