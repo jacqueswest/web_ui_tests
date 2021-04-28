@@ -50,7 +50,6 @@ class Actions(object):
         # self.driver.find_element_by_locator(locators.get("search_box")).send_keys(text)
         # The third coloumn is the username column
         username_obj = self.get_elements(elem=self.elem.user_table_column)
-        import time
         # If the table is empty, it returns an empty list
         return username_obj and username_obj[2].text == text or False
 
