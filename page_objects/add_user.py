@@ -46,8 +46,6 @@ class Actions(object):
         """ Determine if the username is unique, returns True if it exists """
 
         self.enter_text(elem=self.elem.search_box, text=text)
-        # self.driver.find_element_by_locator(locators.get("search_box")).clear()
-        # self.driver.find_element_by_locator(locators.get("search_box")).send_keys(text)
         # The third coloumn is the username column
         username_obj = self.get_elements(elem=self.elem.user_table_column)
         # If the table is empty, it returns an empty list
